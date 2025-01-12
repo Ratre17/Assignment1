@@ -170,121 +170,90 @@ body, html {
 
 /* Recent News Section */
 .recent-news {
-  padding: 40px;
-  background-color: #faf6f9;
-  
-  
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-.news-title {
+.section-title {
   text-align: left;
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 20px;
-
+  font-size: 2rem;
+  color: #2e2d2d;
+  margin-bottom: 30px;
 }
 
-/* News Cards Container */
-.news-cards {
-  display: flex;
-  flex-direction: row;
-  gap: 40px; 
-}
-
-/* News Card */
 .news-card {
   display: flex;
-  align-items: right;
-  background-color: #ebdbdb;
+  align-items: center;
+  background-color: #f8f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
-/* Image on the left */
-.card-left .news-image {
-  order: 1;
+.news-card.card-left {
+  flex-direction: row;
 }
 
-/* Image on the right */
-.card-right .news-image {
-  order: 2;
+.news-card.card-right {
+  flex-direction: row-reverse;
 }
 
-/* News Image */
 .news-image {
-
-  max-width: 50%; 
-  height: auto;
-  border-radius: 8px;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* News Content */
 .news-content {
+  padding: 20px;
   flex: 1;
-  padding: 40px;
 }
 
-.news-content h3 {
-  font-size: 20px;
-  margin: 0 0 10px;
-  color: #222;
+.news-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.news-content p {
-  font-size: 14px;
-  margin: 0 0 15px;
-  color: #555;
+.news-details {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-/* News Meta */
 .news-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 12px;
-  color: #777;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .channel-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; 
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
-/* Button */
-.btn {
+.publication-time {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.read-more-button {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 14px;
-  border-radius: 5px;
-  text-decoration: none;
+  background-color: #6a96e7;
   color: #fff;
-  background-color: #b7cfe9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
-.btn:hover {
-  background-color: #0056b3;
-}
-
-
-  .news-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .news-image {
-    width: 100%;
-  }
-
-/* Reset */
-body, h2, p, button, input {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+.read-more-button:hover {
+  background-color: #bed4e6;
 }
 
 /* Donate Today Section */
@@ -328,11 +297,11 @@ body, h2, p, button, input {
 }
 
 .donation-option:hover {
-  background-color: #f0f0f0;
+  background-color: #b98383;
 }
 
 .donation-option.active {
-  background-color: #d1f5e0; 
+  background-color: #6ee09c; 
   border-color: #a3e1c5; 
 }
 
@@ -357,21 +326,19 @@ body, h2, p, button, input {
 
 /* Donate Button */
 .donate-button {
-  display: flex;
-  box-sizing: content-box;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #006d42; 
+  display: block; 
+  margin: 0 auto;       
+  padding: 10px 20px;
+  background-color: #00614a;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .donate-button:hover {
-  background-color: #004d31;
+  background-color: #023020;
 }
 
  
@@ -540,7 +507,7 @@ body, h2, p, button, input {
 
 .description {
   font-size: 40px;
-  color: #333;
+  color: #928d8d;
   margin-bottom: 40px;
 }
 
@@ -554,5 +521,7 @@ body, h2, p, button, input {
   width: 50px; 
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(39, 33, 33, 0.1);
 }
+
+
